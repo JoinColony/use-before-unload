@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "pretty": true,
+    "rootDir": "src",
+    "sourceMap": true,
+    "outDir": "lib",
+    "lib": ["es2018", "dom"]
+  },
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
+}
