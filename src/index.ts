@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 const useBeforeUnload = (
-  value: ((evt: BeforeUnloadEvent) => string) | string
+  value: ((evt: BeforeUnloadEvent) => any) | string
 ) => {
   const handleBeforeunload = (evt: BeforeUnloadEvent) => {
     let returnValue
@@ -13,12 +13,12 @@ const useBeforeUnload = (
     if (returnValue) {
       evt.preventDefault()
     }
+    evt.returnValue = returnValue
     return returnValue
   }
 
   useEffect(() => {
     window.addEventListener('beforeunload', handleBeforeunload)
-
     return () => window.removeEventListener('beforeunload', handleBeforeunload)
   }, [])
 }
