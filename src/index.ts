@@ -12,8 +12,8 @@ const useBeforeUnload = (
     }
     if (returnValue) {
       evt.preventDefault()
+      evt.returnValue = returnValue
     }
-    evt.returnValue = returnValue
     return returnValue
   }
 
