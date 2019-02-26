@@ -1,6 +1,6 @@
 {
   "name": "use-before-unload",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook to setup an 'onbeforeunload' listener",
   "main": "lib/index.js",
   "author": "Christian Maniewski <code@chmanie.com>",
