@@ -4,6 +4,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "jsx": "react",
+    "declaration": true,
     "pretty": true,
     "rootDir": "src",
     "sourceMap": true,
